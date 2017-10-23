@@ -1,0 +1,10 @@
+version: '3'
+services:
+  jupyter:
+    build:
+      context: ./
+    ports:
+      - 8888:8888
+    volumes:
+      - ./notebooks:/notebooks
+      - ./data:/data
